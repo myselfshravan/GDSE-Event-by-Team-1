@@ -11,14 +11,14 @@ st.title("AI Text Gen 🤖")
 st.subheader("Write the Prompt")
 
 prompt = st.text_area("Prompt", "Enter the Prompt Here")
-prepromt = "Be creative! and explain in monkey language"
+pre_prompt = "Be creative! and explain in monkey language"
 
 check = st.button("Ask the AI")
 if check:
     completion = anthropic.completions.create(
         model="claude-1",
         max_tokens_to_sample=100,
-        prompt=f"{HUMAN_PROMPT} {prepromt} {prompt} {AI_PROMPT}",
+        prompt=f"{HUMAN_PROMPT} {pre_prompt} {prompt} {AI_PROMPT}",
     )
     out = completion.completion
     st.write(out)
