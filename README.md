@@ -22,13 +22,13 @@ pip install openai
 
 ```
 
-#### [Streamlit Offical Docs](https://docs.streamlit.io/library/api-reference/write-magic)
+#### [Streamlit Official Docs](https://docs.streamlit.io/library/api-reference/write-magic)
 
 #### [Streamlit Cheat Sheet](https://cheatsheet.streamlit.app/)
 
-#### [OpenAI API Reference for Completion](https://platform.openai.com/docs/api-reference/completions)
+#### [OpenAI API Reference for Text Completion](https://platform.openai.com/docs/api-reference/completions)
 
-#### [OpenAI API Reference for Images](https://platform.openai.com/docs/api-reference/completions)
+#### [OpenAI API Reference for Image Generation](https://platform.openai.com/docs/api-reference/completions)
 
 ## How to run
 
@@ -36,18 +36,17 @@ pip install openai
 streamlit run app.py
 ```
 
-### [Source Code](https://github.com/myselfshravan/GDSE-Event-by-Team-1)
+---
 
-## Creating requirements.txt
+#### [Source Code](https://github.com/myselfshravan/GDSE-Event-by-Team-1)
 
-[Reference](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
+#### [Code for TextGen](https://github.com/githubhosting/Streamlit-Demo/blob/main/textgen.py)
 
-```bash
-py -m pip install -r requirements.txt
-pip3 freeze >requirements.txt
-```
+#### [Claude API Docs](https://docs.anthropic.com/claude/reference/getting-started-with-the-api)
 
-### [Code for TextGen](https://github.com/githubhosting/Streamlit-Demo/blob/main/textgen.py)
+#### [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)
+
+---
 
 ## API key Hiding
 
@@ -58,8 +57,13 @@ openai_api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 calude_api_key = "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-#### [Claude API Docs](https://docs.anthropic.com/claude/reference/getting-started-with-the-api)
+## Creating requirements.txt
 
-#### [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python)
+[Reference](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
+
+```bash
+py -m pip install -r requirements.txt
+pip3 freeze >requirements.txt
+```
 
 #### [Deploy Here](https://share.streamlit.io/)
