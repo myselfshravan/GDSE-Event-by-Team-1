@@ -1,12 +1,12 @@
 import streamlit as st
 import openai
 
-st.set_page_config(page_title="OpenAI GPT", page_icon="🤖")
+st.set_page_config(page_title="OpenAI Text Gen", page_icon="🤖")
 
 openai.api_key = st.secrets["openai_api_key"]
 
 st.title("AI Text Gen 🤖")
-st.subheader("Write the Prompt")
+st.subheader("Write the Prompt below")
 prompt = st.text_area("Prompt", "Enter the Text Here")
 
 ask_button = st.button("Ask the AI")

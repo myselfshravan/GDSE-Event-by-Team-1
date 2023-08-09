@@ -8,8 +8,7 @@ openai.api_key = st.secrets["openai_api_key"]
 
 st.title("AI Text Gen 🤖")
 st.subheader("Write the Prompt")
-# prompt = st.text_area("Prompt", "Enter the Text Here")
-prompt = "This is a test prompt"
+prompt = st.text_area("Prompt", "Enter the Text Here")
 
 check = st.button("Ask the AI")
 if check:

@@ -4,18 +4,24 @@ import openai
 # Set your OpenAI API key here
 openai.api_key = ""
 
-st.title("AI Text Gen 🤖")
-st.subheader("Write the Prompt")
-prompt = st.text_area("Prompt", "Enter the Text Here")
+# Streamlit website title and icon
+st.set_page_config(page_title="OpenAI Text Gen", page_icon="🤖")
 
-check = st.button("Ask the AI")
-if check:
-    st.subheader("OpenAI Davinci-3 AI")
-    completion = openai.Completion.create(
+# Streamlit App Title and Prompt Input
+st.title("AI Text Generation 🤖")
+prompt = st.text_area("Enter Prompt", "Type your text here...")
+
+# "Ask" Button for AI Generation
+ask_button = st.button("Generate Text")
+
+# Generate and Display AI Response
+if ask_button:
+    st.subheader("AI Response:")
+    response = openai.Completion.create(
         model="text-davinci-003",
-        prompt=f"{prompt}",
+        prompt=prompt,
         max_tokens=100,
-        temperature=0
+        temperature=0.2
     )
-    text = completion.choices[0].text
-    st.write(text)
+    generated_text = response.choices[0].text
+    st.write(generated_text)

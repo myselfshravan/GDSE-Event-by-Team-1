@@ -7,8 +7,7 @@ openai.api_key = st.secrets["openai_api_key"]
 
 st.title("AI Image Gen 🤖")
 st.subheader("Write the Prompt")
-# prompt = st.text_area("Prompt", "Enter the Text Here")
-prompt = "A cute baby sea otter"
+prompt = st.text_area("Prompt", "A cute baby sea otter")
 
 ask_button = st.button("Generate Image")
 if ask_button:
@@ -16,8 +15,7 @@ if ask_button:
     completion = openai.Image.create(
         prompt=f"{prompt}",
         n=1,
-        size="1024x1024"
+        size="512x512"
     )
     image = completion.data[0].url
-    st.write(image)
     st.image(image, use_column_width=True)
