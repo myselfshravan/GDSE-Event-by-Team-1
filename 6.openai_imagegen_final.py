@@ -18,4 +18,4 @@ if ask_button:
         size="512x512"
     )
     image = completion.data[0].url
-    st.image(image, use_column_width=True)
+    st.image(image)

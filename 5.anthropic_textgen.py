@@ -5,7 +5,7 @@ import streamlit as st
 ANTHROPIC_API_KEY = st.secrets["calude_api_key"]
 anthropic = Anthropic(api_key=ANTHROPIC_API_KEY)
 
-st.set_page_config(page_title="My GPT", page_icon="🤖")
+st.set_page_config(page_title="Anthropic Text Gen", page_icon="🤖")
 
 st.title("AI Text Gen 🤖")
 st.subheader("Write the Prompt")
@@ -13,8 +13,7 @@ st.subheader("Write the Prompt")
 prompt = st.text_area("Prompt", "Enter the Prompt Here")
 pre_prompt = "Be creative! and explain in monkey language"
 
-check = st.button("Ask the AI")
-if check:
+if st.button("Ask the AI"):
     completion = anthropic.completions.create(
         model="claude-1",
         max_tokens_to_sample=100,
