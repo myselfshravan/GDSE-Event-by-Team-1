@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = ""
+openai.api_key = "sk-xxx"
 
 st.title("AI Text Gen 🤖")
 prompt = st.text_area("Prompt", "Enter your text here...")

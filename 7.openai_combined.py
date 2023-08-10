@@ -32,6 +32,7 @@ st.title("Gen AI 🤖")
 st.subheader("Write Prompt below")
 prompt = st.text_area("Prompt", "")
 engine = st.radio("Select Engine", ("text", "image"))
+
 model_selected = None
 if engine == "text":
     complete_list = openai.Model.list()

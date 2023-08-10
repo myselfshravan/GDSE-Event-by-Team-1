@@ -19,7 +19,7 @@ ask_button = st.button("Generate Text")
 if ask_button:
     st.subheader("AI Response:")
     response = openai.Completion.create(
-        model="text-davinci-003",  # Model to use
+        model="text-davinci-001",  # Model to use
         prompt=prompt,
         max_tokens=100,  # Max length of the response
         temperature=0.2  # Controls randomness of the response (0 to 2)

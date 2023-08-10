@@ -12,7 +12,7 @@ ask_button = st.button("Generate")
 if ask_button:
     st.subheader("OpenAI Davinci-3 AI")
     completion = openai.Completion.create(
-        model="text-davinci-003",
+        model="text-davinci-001",
         prompt=f"{prompt}",
         max_tokens=100,
         temperature=0
