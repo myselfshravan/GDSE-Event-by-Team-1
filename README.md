@@ -40,6 +40,8 @@ streamlit run app.py
 
 #### [Source Code](https://github.com/myselfshravan/GDSE-Event-by-Team-1)
 
+#### [Demo App](https://github.com/myselfshravan/GDSE-Event-by-Team-1)
+
 #### [Some Public APIs](https://github.com/Postman-Student-Program/public-apis)
 
 #### [Code for TextGen](https://github.com/githubhosting/Streamlit-Demo/blob/main/textgen.py)
