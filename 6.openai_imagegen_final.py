@@ -14,8 +14,8 @@ if ask_button:
     st.subheader("OpenAI Image Generator")
     completion = openai.Image.create(
         prompt=f"{prompt}",
-        n=1,
-        size="512x512"
+        n=1,  # Number of images to create.
+        size="512x512"  # Image size.
     )
     image_url = completion.data[0].url
     st.image(image_url)

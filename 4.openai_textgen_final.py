@@ -9,7 +9,7 @@ st.title("AI Text Gen 🤖")
 st.subheader("Write the Prompt below")
 prompt = st.text_area("Prompt", "Enter the Prompt Here...")
 
-ask_button = st.button("Ask the AI")
+ask_button = st.button("Generate")
 if ask_button:
     st.subheader("OpenAI Davinci-3 AI")
     completion = openai.Completion.create(
